@@ -1,0 +1,27 @@
+{
+  "name": "account-microservice",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:debug": "node --inspect src/index.js",
+    "infra:start": "docker compose up -d",
+    "infra:stop": "docker compose down",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "joi": "^18.0.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.5",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "chai": "^6.2.2",
+    "mocha": "^11.7.5",
+    "sinon": "^21.0.1"
+  }
+}
